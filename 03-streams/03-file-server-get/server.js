@@ -15,7 +15,7 @@ server.on('request', (req, res) => {
     res.end();
   };
 
-  if (pathname.split('/').length > 1) {
+  if (pathname.includes('/')) {
     throwError(400);
   }
 
